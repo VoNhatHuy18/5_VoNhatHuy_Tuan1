@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+
+<body>
+    <script>
+        function MtinhBMI(cao, nang) {
+            cao = cao / 100;
+            var MBMI = nang / (cao * cao);
+            MBMI = MBMI.toFixed(1);
+            return MBMI;
+        }
+
+        function JtinhBMI(cao, nang) {
+            cao = cao / 100;
+            var JBMI = nang / (cao * cao);
+            JBMI = JBMI.toFixed(1);
+            return JBMI;
+        }
+        var nang = 78;
+        var cao = 169;
+        var MBMI = MtinhBMI(cao, nang);
+        console.log("BMI của Mark là : " + MBMI);
+
+        var nang = 92;
+        var cao = 195;
+        var JBMI = JtinhBMI(cao, nang);
+        console.log("BMI của John là : " + JBMI);
+
+        if (MBMI > JBMI) {
+            console.log("MBI của Mark " + MBMI + " lớn hơn MBI của John " + JBMI);
+        } else {
+            console.log("MBI của Mark " + MBMI + " không lớn hơn MBI của John " + JBMI);
+        }
+
+
+        var nang = 95;
+        var cao = 188;
+        var MBMI = MtinhBMI(cao, nang);
+        console.log("BMI của Mark là : " + MBMI);
+
+        var nang = 85;
+        var cao = 176;
+        var JBMI = JtinhBMI(cao, nang);
+        console.log("BMI của John là : " + JBMI);
+
+        if (MBMI > JBMI) {
+            console.log("MBI của Mark " + MBMI + " lớn hơn MBI của John " + JBMI);
+        } else {
+            console.log("MBI của Mark " + MBMI + " không lớn hơn MBI của John " + JBMI);
+        }
+    </script>
+</body>
+
+</html>
